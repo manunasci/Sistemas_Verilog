@@ -1,11 +1,9 @@
-module semaforo(A, B, VERA, VERB, VERMA, VERMB);
+module semaforo(A, B, VA, VB);
 
     input A, B;
-    output VERA, VERB, VERMA, VERMB;
+    output VA, VB;
 
-    assign VERA = 
-    assign VERB =
-    assign VERMA =
-    assign VERMB =
+    assign VA= A;
+    assign VB= ~A & B;
 
 endmodule
